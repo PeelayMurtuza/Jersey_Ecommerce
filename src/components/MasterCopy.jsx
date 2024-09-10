@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from '../components/Card'
-
+import Footer from './Footer'
 function  MasterCopy() {
   const masterJerseys = [
     { id: 1, name: "Master Jersey 1", image: "/master1.jpg", description: "Master-grade jersey." },
@@ -13,9 +13,10 @@ function  MasterCopy() {
   ]
 
   return (
-    <div className="container mx-auto py-12">
-      <h2 className="text-2xl font-bold mb-4">Master Jerseys</h2>
+    <div className="container mx-auto py-12 " >
+      <h2 className="text-2xl font-bold mb-4  pl-10">Master Jerseys</h2>
       <Card jerseys={masterJerseys} />
+      <Footer/>
     </div>
   )
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from '../components/Card'
+import Footer from './Footer'
 
 function FirstCopy () {
   const firstCopyJerseys = [
@@ -13,9 +14,11 @@ function FirstCopy () {
   ]
 
   return (
-    <div className="container mx-auto py-12 px-10 ">
-      <h2 className="text-2xl font-bold mb-4">First Copy Jerseys</h2>
+    <div className="container mx-auto py-12 ">
+      <h2 className="text-2xl font-bold mb-4  pl-10">First Copy Jerseys</h2>
       <Card jerseys={firstCopyJerseys} />
+
+      <Footer/>
     </div>
   )
 }
