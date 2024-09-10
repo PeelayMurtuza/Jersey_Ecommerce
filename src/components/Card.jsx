@@ -30,21 +30,20 @@ function Card({ jerseys }) {
                 {jerseys.map((jersey) => (
                     <div
                         key={jersey.id}
-                        className="border rounded-lg shadow-lg bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
+                        className="bg-white border rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 overflow-hidden"
                     >
                         <img
                             src={jersey.image}
                             alt={jersey.name}
-                            className="rounded-t-lg object-cover w-full h-48 sm:h-56 md:h-64"
-                            style={{ aspectRatio: "300/200" , animation: 'rotateX 5s infinite' }}
+                            className="rounded-t-2xl object-cover w-full h-48 sm:h-56 md:h-64"
                         />
-                        <div className="p-4 sm:p-6">
-                            <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2">{jersey.name}</h3>
-                            <p className="text-gray-600 text-sm sm:text-base mb-2">{jersey.description}</p>
-                            <p className="text-gray-800 font-semibold text-sm sm:text-base mb-2">{jersey.price}</p>
+                        <div className="p-6">
+                            <h3 className="text-xl font-semibold mb-2 text-gray-800">{jersey.name}</h3>
+                            <p className="text-gray-600 mb-4">{jersey.description}</p>
+                            <p className="text-lg font-bold text-gray-900 mb-4">{jersey.price}</p>
                             <button
                                 onClick={() => openWhatsApp(jersey)}
-                                className="bg-green-500 text-white px-4 py-2 mt-4 rounded hover:bg-green-600 transition duration-300"
+                                className="w-full bg-gradient-to-r from-green-400 to-green-500 text-white py-2 rounded-lg shadow-md hover:bg-gradient-to-l transition-all duration-300"
                             >
                                 Contact on WhatsApp
                             </button>

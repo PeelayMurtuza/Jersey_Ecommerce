@@ -4,12 +4,14 @@ import LandingPage from "./components/LandingPage";
 import Premium from "./components/Premium";
 import MasterCopy from "./components/MasterCopy";
 import FirstCopy from "./components/FirstCopy";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <BrowserRouter>
     
-      <div className="bg-red-500 flex flex-col md:flex-row justify-between items-center h-16 px-4 md:px-8 shadow-lg">
+      <div className=" flex flex-col md:flex-row justify-between items-center h-16 px-4 md:px-8 shadow-lg bg-gradient-to-r from-red-300 via-red-400 to-red-500
+">
         <NavLink to="/" className="text-white text-2xl font-bold py-2">
          Premium Pitch Wear
         </NavLink>
@@ -47,6 +49,7 @@ function App() {
         <Route path="/mastercopy" element={<MasterCopy />} />
         <Route path="/firstcopy" element={<FirstCopy />} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }

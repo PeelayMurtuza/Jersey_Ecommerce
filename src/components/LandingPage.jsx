@@ -1,16 +1,43 @@
 import React from 'react';
-import Footer from './Footer';
+import { useNavigate } from 'react-router-dom';
+
 
 const LandingPage = () => {
   
-  return (
-    <div className="min-h-screen bg-gray-100">
+  const navigate = useNavigate();
 
-      <section className="bg-gray-900 text-white py-20">
+  const handleShopNowClick = () => {
+    navigate('/premium');
+  };
+
+  const handleBuyNowPremium = () => {
+    navigate('/premium');
+  };
+
+  const handleBuyNowMaster = () => {
+    navigate('/mastercopy');
+  };
+
+  const handleBuyNowFirst = () => {
+    navigate('/firstcopy');
+  };
+  
+
+  
+  return (
+    <div className="min-h-screen bg-gradient-to-r from-white via-yellow-200  to-blue-200
+">
+
+      <section className="bg-gradient-to-r from-white via-yellow-200  to-blue-200 text-gray-900 py-20">
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Discover the Best Products</h1>
           <p className="text-lg md:text-2xl mb-8">Find top-rated items at unbeatable prices.</p>
-          <a href="/premium" className="bg-yellow-500 text-gray-900 py-2 px-4 rounded-lg text-lg">Shop Now</a>
+          <button
+            onClick={handleShopNowClick}
+            className="bg-yellow-500 text-gray-900 py-2 px-4 rounded-lg text-lg hover:scale-110"
+          >
+            Shop Now
+          </button>
         </div>
       </section>
 
@@ -23,20 +50,35 @@ const LandingPage = () => {
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <img src="https://via.placeholder.com/150" alt="Product" className="w-full h-48 object-cover mb-4 rounded-lg" />
               <h3 className="text-xl font-semibold mb-2">Premium Jersey</h3>
-              <p className="text-gray-600 mb-4">Rs 1000-1200</p>
-              <a href="/premium" className="bg-yellow-500 text-gray-900 py-2 px-4 rounded-lg text-center block">Buy Now</a>
+              <p className="text-gray-600 mb-4">Rs 1000</p>
+              <button
+            onClick={handleBuyNowPremium}
+            className="bg-yellow-500 text-gray-900 py-2 px-4 rounded-lg text-lg w-full"
+          >
+            Buy Now
+          </button>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <img src="https://via.placeholder.com/150" alt="Product" className="w-full h-48 object-cover mb-4 rounded-lg" />
               <h3 className="text-xl font-semibold mb-2">Master Jersey</h3>
-              <p className="text-gray-600 mb-4">Rs 500-600</p>
-              <a href="/mastercopy" className="bg-yellow-500 text-gray-900 py-2 px-4 rounded-lg text-center block">Buy Now</a>
+              <p className="text-gray-600 mb-4">Rs 650</p>
+              <button
+            onClick={handleBuyNowMaster}
+            className="bg-yellow-500 text-gray-900 py-2 px-4 rounded-lg text-lg w-full"
+          >
+            Buy Now
+          </button>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <img src="https://via.placeholder.com/150" alt="Product" className="w-full h-48 object-cover mb-4 rounded-lg" />
               <h3 className="text-xl font-semibold mb-2">FirstCopy jersey</h3>
-              <p className="text-gray-600 mb-4">Rs 200-300</p>
-              <a href="/firstcopy" className="bg-yellow-500 text-gray-900 py-2 px-4 rounded-lg text-center block">Buy Now</a>
+              <p className="text-gray-600 mb-4 ">600 rs</p>
+              <button
+            onClick={handleBuyNowFirst}
+            className="bg-yellow-500 text-gray-900 py-2 px-4 rounded-lg text-lg w-full"
+          >
+            Buy Now
+          </button>
             </div>
           </div>
         </div>
@@ -96,7 +138,7 @@ const LandingPage = () => {
         </div>
       </section>
 
-      <Footer />
+    
     </div>
   );
 };
