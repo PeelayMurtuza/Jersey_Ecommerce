@@ -13,7 +13,7 @@ function  MasterCopy() {
   ]
 
   return (
-    <div className="container mx-auto py-12 bg-gradient-to-r from-white via-yellow-200  to-blue-200" >
+    <div className="container mx-auto py-12 bg-gradient-to-r from-white via-yellow-100  to-blue-100" >
       <h2 className="text-2xl font-bold mb-4  pl-10 text-center">Master Jerseys</h2>
       <Card jerseys={masterJerseys} />
       
