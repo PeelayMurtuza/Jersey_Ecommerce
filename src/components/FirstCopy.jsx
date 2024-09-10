@@ -15,7 +15,7 @@ function FirstCopy () {
 
   return (
     <div className="container mx-auto py-12 ">
-      <h2 className="text-2xl font-bold mb-4  pl-10">First Copy Jerseys</h2>
+      <h2 className="text-2xl font-bold mb-4  pl-10 text-center">First Copy Jerseys</h2>
       <Card jerseys={firstCopyJerseys} />
 
       <Footer/>

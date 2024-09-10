@@ -17,7 +17,7 @@ function Card({ jerseys }) {
         setTimeout(() => {
             setData({ title: 'Card Title', description: 'Card Description' });
             setIsLoading(false);
-        }, 500);
+        }, 800);
     }, []);
 
     if (isLoading) {
@@ -36,7 +36,7 @@ function Card({ jerseys }) {
                             src={jersey.image}
                             alt={jersey.name}
                             className="rounded-t-lg object-cover w-full h-48 sm:h-56 md:h-64"
-                            style={{ aspectRatio: "300/200" }}
+                            style={{ aspectRatio: "300/200" , animation: 'rotateX 5s infinite' }}
                         />
                         <div className="p-4 sm:p-6">
                             <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2">{jersey.name}</h3>
