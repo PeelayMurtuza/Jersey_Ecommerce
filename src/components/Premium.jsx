@@ -16,8 +16,8 @@ function Premium() {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-12 bg-gradient-to-r from-white via-yellow-100  to-blue-100">
-      <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">
+    <div className="container mx-auto px-4 py-12 bg-gradient-to-r from-slate-900 to-slate-700">
+      <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center text-white">
         Premium Jerseys
       </h2>
       <Card jerseys={premiumJerseys} />

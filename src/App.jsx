@@ -10,7 +10,7 @@ function App() {
   return (
     <BrowserRouter>
     
-      <div className=" flex flex-col md:flex-row justify-between items-center h-16 px-4 md:px-8 shadow-lg bg-gradient-to-r from-red-300 via-red-400 to-red-500
+      <div className=" flex flex-col md:flex-row justify-between items-center h-16 px-4 md:px-8 shadow-lg bg-gradient-to-r from-slate-900 to-slate-900
 ">
         <NavLink to="/" className="text-white text-2xl font-bold py-2">
          Premium Pitch Wear

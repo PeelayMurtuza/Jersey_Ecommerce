@@ -25,10 +25,10 @@ const LandingPage = () => {
 
   
   return (
-    <div className="min-h-screen bg-gradient-to-r from-white via-yellow-100  to-blue-200
+    <div className="min-h-screen bg-gradient-to-r from-slate-900 to-slate-700
 ">
 
-      <section className="bg-gradient-to-r from-white via-yellow-100  to-blue-100 text-gray-900 py-20">
+      <section className="bg-gradient-to-r  from-slate-900 to-slate-700 text-white py-20">
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Discover the Best Products</h1>
           <p className="text-lg md:text-2xl mb-8">Find top-rated items at unbeatable prices.</p>
@@ -44,7 +44,7 @@ const LandingPage = () => {
 
       <section id="featured" className="py-16">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold mb-8 text-center">Featured Products</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center text-white">Featured Products</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
             <div className="bg-white p-6 rounded-lg shadow-lg">
@@ -60,7 +60,7 @@ const LandingPage = () => {
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <img src="https://via.placeholder.com/150" alt="Product" className="w-full h-48 object-cover mb-4 rounded-lg" />
-              <h3 className="text-xl font-semibold mb-2">Master Jersey</h3>
+              <h3 className="text-xl font-semibold mb-2 ">Master Jersey</h3>
               <p className="text-gray-600 mb-4">Rs 650</p>
               <button
             onClick={handleBuyNowMaster}
@@ -89,7 +89,7 @@ const LandingPage = () => {
 
       <section id="blog" className="py-16">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold mb-8 text-center">Review</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center text-white">Review</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
             <div className="bg-white p-6 rounded-lg shadow-lg">
