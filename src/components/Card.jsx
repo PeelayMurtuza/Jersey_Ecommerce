@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import CardSkeleton from './CardSkeleton';
 
 function Card({ jerseys }) {
+    const navigate = useNavigate();
     const phoneNumber = '+919960866705';
 
     const openWhatsApp = (jersey) => {
@@ -26,6 +28,26 @@ function Card({ jerseys }) {
 
     return (
         <div className="container mx-auto px-4 py-8">
+            <button
+                onClick={() => navigate(-1)}
+                className="mb-4 text-white bg-black hover:bg-gray-950 px-4 py-2 rounded-lg shadow-md transition-all duration-300 flex items-center"
+            >
+                <svg
+                    className="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M15 19l-7-7 7-7"
+                    />
+                </svg>
+                <span className="ml-2">Back</span>
+            </button>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 {jerseys.map((jersey) => (
                     <div
