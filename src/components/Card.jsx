@@ -17,7 +17,7 @@ function Card({ jerseys }) {
         setTimeout(() => {
             setData({ title: 'Card Title', description: 'Card Description' });
             setIsLoading(false);
-        }, 800);
+        }, 500);
     }, []);
 
     if (isLoading) {
