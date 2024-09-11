@@ -1,25 +1,32 @@
-import React from 'react'
-import Card from '../components/Card'
-import Footer from './Footer'
+import React, { useState, useEffect } from 'react';
+import Card from '../components/Card';
+import Footer from './Footer';
 
-function FirstCopy () {
-  const firstCopyJerseys = [
-    { id: 1, name: "First Copy Jersey 1", image: "/firstcopy1.jpg", description: "Affordable first copy jersey." , price : "600 rs" },
-    { id: 2, name: "First Copy Jersey 2", image: "/firstcopy1.jpg", description: "Affordable first copy jersey." , price : "600 rs" },
-    { id: 3, name: "First Copy Jersey 3", image: "/firstcopy1.jpg", description: "Affordable first copy jersey." , price : "600 rs" },
-    { id: 4, name: "First Copy Jersey 4", image: "/firstcopy1.jpg", description: "Affordable first copy jersey." , price : "600 rs" },
-    { id: 5, name: "First Copy Jersey 5", image: "/firstcopy1.jpg", description: "Affordable first copy jersey." , price : "600 rs" },
-    { id: 6, name: "First Copy Jersey 6", image: "/firstcopy1.jpg", description: "Affordable first copy jersey." , price : "600 rs" },
-    { id: 7, name: "First Copy Jersey 7", image: "/firstcopy2.jpg", description: "Good quality first copy.", price : "600 rs" }
-  ]
+function FirstCopy() {
+  const [firstCopyJerseys, setFirstCopyJerseys] = useState([]);
 
+  useEffect(() => {
+    const fetchFirstCopyJerseys = async () => {
+      try {
+        const response = await fetch('/products.json'); 
+        if (!response.ok) {
+          throw new Error("Failed to fetch products data");
+        }
+        const data = await response.json(); 
+        setFirstCopyJerseys(data.firstcopy); 
+      } catch (error) {
+        console.error("Error fetching the first copy jerseys:", error);
+      }
+    };
+
+    fetchFirstCopyJerseys(); 
+  }, []); 
   return (
     <div className="container mx-auto py-12 bg-gradient-to-r from-slate-900 to-slate-700">
-      <h2 className="text-2xl font-bold mb-4  pl-10 text-center text-white">First Copy Jerseys</h2>
-      <Card jerseys={firstCopyJerseys} />
-
-     
+      <h2 className="text-2xl font-bold mb-4 pl-10 text-center text-white">First Copy Jerseys</h2>
+      <Card jerseys={firstCopyJerseys} /> 
     </div>
-  )
+  );
 }
-export default FirstCopy ;
+
+export default FirstCopy;

@@ -1,0 +1,150 @@
+{
+    "premium": [
+      {
+        "id": 1,
+        "name": "Premium Jersey 1",
+        "price": "1000 rs",
+        "description": "High-quality premium jersey with excellent breathability and durability.",
+        "image": "path_to_image/premium_jersey_1.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Premium Jersey 2",
+        "price": "1000 rs",
+        "description": "Limited edition premium jersey with unique design and enhanced comfort.",
+        "image": "path_to_image/premium_jersey_2.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Premium Jersey 2",
+        "price": "1000 rs",
+        "description": "Limited edition premium jersey with unique design and enhanced comfort.",
+        "image": "path_to_image/premium_jersey_2.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Premium Jersey 2",
+        "price": "1000 rs",
+        "description": "Limited edition premium jersey with unique design and enhanced comfort.",
+        "image": "path_to_image/premium_jersey_2.jpg"
+      }
+    ],
+
+    "mastercopy": [
+      {
+        "id": 1,
+        "name": "MasterCopy Jersey 1",
+        "price": "650 rs",
+        "description": "MasterCopy jersey with a perfect balance of comfort and style.",
+        "image": "path_to_image/mastercopy_jersey_1.jpg"
+      },
+      {
+        "id": 2,
+        "name": "MasterCopy Jersey 2",
+        "price": "650 rs",
+        "description": "Comfortable and stylish jersey for everyday wear and casual outings.",
+        "image": "path_to_image/mastercopy_jersey_2.jpg"
+      },
+      {
+        "id": 2,
+        "name": "MasterCopy Jersey 2",
+        "price": "650 rs",
+        "description": "Comfortable and stylish jersey for everyday wear and casual outings.",
+        "image": "path_to_image/mastercopy_jersey_2.jpg"
+      },
+      {
+        "id": 2,
+        "name": "MasterCopy Jersey 2",
+        "price": "650 rs",
+        "description": "Comfortable and stylish jersey for everyday wear and casual outings.",
+        "image": "path_to_image/mastercopy_jersey_2.jpg"
+      },
+      {
+        "id": 2,
+        "name": "MasterCopy Jersey 2",
+        "price": "650 rs",
+        "description": "Comfortable and stylish jersey for everyday wear and casual outings.",
+        "image": "path_to_image/mastercopy_jersey_2.jpg"
+      },
+      {
+        "id": 2,
+        "name": "MasterCopy Jersey 2",
+        "price": "650 rs",
+        "description": "Comfortable and stylish jersey for everyday wear and casual outings.",
+        "image": "path_to_image/mastercopy_jersey_2.jpg"
+      },
+      {
+        "id": 2,
+        "name": "MasterCopy Jersey 2",
+        "price": "650 rs",
+        "description": "Comfortable and stylish jersey for everyday wear and casual outings.",
+        "image": "path_to_image/mastercopy_jersey_2.jpg"
+      },
+      {
+        "id": 2,
+        "name": "MasterCopy Jersey 2",
+        "price": "650 rs",
+        "description": "Comfortable and stylish jersey for everyday wear and casual outings.",
+        "image": "path_to_image/mastercopy_jersey_2.jpg"
+      },
+      {
+        "id": 2,
+        "name": "MasterCopy Jersey 2",
+        "price": "650 rs",
+        "description": "Comfortable and stylish jersey for everyday wear and casual outings.",
+        "image": "path_to_image/mastercopy_jersey_2.jpg"
+      }
+    ],
+    "firstcopy": [
+      {
+        "id": 1,
+        "name": "FirstCopy Jersey 1",
+        "price": "600 rs",
+        "description": "Affordable first copy jersey, ideal for casual wear.",
+        "image": "path_to_image/firstcopy_jersey_1.jpg"
+      },
+      {
+        "id": 2,
+        "name": "FirstCopy Jersey 2",
+        "price": "600 rs",
+        "description": "Budget-friendly jersey with a classic look and feel.",
+        "image": "path_to_image/firstcopy_jersey_2.jpg"
+      },
+      {
+        "id": 2,
+        "name": "FirstCopy Jersey 2",
+        "price": "600 rs",
+        "description": "Budget-friendly jersey with a classic look and feel.",
+        "image": "path_to_image/firstcopy_jersey_2.jpg"
+      },
+      {
+        "id": 2,
+        "name": "FirstCopy Jersey 2",
+        "price": "600 rs",
+        "description": "Budget-friendly jersey with a classic look and feel.",
+        "image": "path_to_image/firstcopy_jersey_2.jpg"
+      },
+      {
+        "id": 2,
+        "name": "FirstCopy Jersey 2",
+        "price": "600 rs",
+        "description": "Budget-friendly jersey with a classic look and feel.",
+        "image": "path_to_image/firstcopy_jersey_2.jpg"
+      },
+      {
+        "id": 2,
+        "name": "FirstCopy Jersey 2",
+        "price": "600 rs",
+        "description": "Budget-friendly jersey with a classic look and feel.",
+        "image": "path_to_image/firstcopy_jersey_2.jpg"
+      },
+      {
+        "id": 2,
+        "name": "FirstCopy Jersey 2",
+        "price": "600 rs",
+        "description": "Budget-friendly jersey with a classic look and feel.",
+        "image": "path_to_image/firstcopy_jersey_2.jpg"
+      }
+    ]
+  }
+  
